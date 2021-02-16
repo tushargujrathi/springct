@@ -1,0 +1,116 @@
+<script src="/javascripts/index.js"></script>
+<div class="row">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab"><a class="active" href="#test1">Users</a></li>
+            <li class="tab"><a href="#test2">Companies</a></li>
+        </ul>
+    </div>
+    <div id="test1" class="col s12">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a id="addUser" class="waves-effect waves-light btn right">Add User</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="" id="usergrid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="test2" class="col s12">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a id="addCompany" class="waves-effect waves-light btn right">Add Company</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="" id="companygrid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="addUserModal" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12">
+                <h6>Add User</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field col s12 m6">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                    <span class="helper-text red-text hide" id="name_error">Name is required</span>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="email" type="text" class="validate">
+                    <label for="email">Email</label>
+                    <span class="helper-text red-text hide" id="email_error">Email is required</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field col s12 m6">
+                    <input id="phone" type="text" class="validate">
+                    <label for="phone">Phone</label>
+                    <span class="helper-text red-text hide" id="phone_error">Phone is required</span>
+                </div>
+                <div class="input-field col s12 m6">
+                    <select multiple id="company">
+                    </select>
+                    <label>Company</label>
+                    <span class="helper-text red-text hide" id="company_error">Company is required</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="row" style="">
+            <div class="col s12">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+                <a href="#!" id="saveUser" class="btn waves-effect waves-green">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="addCompanyModal" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12">
+                <h6>Add Company</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field col s12 m6">
+                    <input id="companyName" type="text" class="validate">
+                    <label for="companyName">Company Name</label>
+                    <span class="helper-text red-text hide" id="companyName_error">Company Name is required</span>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="city" type="text" class="validate">
+                    <label for="city">City</label>
+                    <span class="helper-text red-text hide" id="city_error">City is required</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="row" style="">
+            <div class="col s12">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+                <a href="#!" id="saveCompany" class="btn waves-effect waves-green">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
